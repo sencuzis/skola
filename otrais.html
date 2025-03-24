@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Otrais</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/mansStils.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+   <a href="index.html#rakstur" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RAKSTURGRAFIKA</a>
+    <a href="index.html#vektor" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VEKTORGRAFIKA</a>
+    <a href="index.html#3d" class="w3-bar-item w3-button w3-padding-large w3-hide-small">3D GRAFIKA</a>
+    <a href="index.html#vid" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEO</a>
+    <a href="index.html#txt" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEKSTA APSTRADE</a>
+    <a href="index.html#exc" class="w3-bar-item w3-button w3-padding-large w3-hide-small">IZKLĀJLAPAS</a>
+    <a href="#ind" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INDIVIDUĀLĀ TĒMA</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#rakstur" class="w3-bar-item w3-button w3-padding-large">RAKSTURGRAFIKA</a>
+  <a href="#vektor" class="w3-bar-item w3-button w3-padding-large">VEKTORGRAFIKA</a>
+  <a href="#3d" class="w3-bar-item w3-button w3-padding-large">3D GRAFIKA</a>
+  <a href="#vid" class="w3-bar-item w3-button w3-padding-large">VIDEO</a>
+  <a href="#txt" class="w3-bar-item w3-button w3-padding-large">TEKSTA APSTRADE</a>
+  <a href="#exc" class="w3-bar-item w3-button w3-padding-large">IZKLĀJLAPAS</a>
+  <a href="#ind" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INDIVIDUĀLĀ TĒMA</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:600px">
+  <img src="images/ergonom_1.png" alt="" class="w3-center">
+  </div>
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="ind">
+    
+    <h1 class="w3-center">Ergonomiskai darba vietai ir 7 pamatprincipi!</h1>
+    <p class="w3-center"><b>1. </b>Taisni sēžot, acīm ir jāskatās uz monitora pašu augšu vai sliktākajā gadījumā 5cm zem.</p>
+    <p class="w3-center"><b>2. </b>Monitoram jābūt aptevuni izstieptas rokas attālumā.</p>
+    <p class="w3-center"><b>3. </b>Jāsēž krēslā ar jostas vietas atbalstu, kas ir ieleiks no 100 līdz 110 grādu leņķī</p>
+    <p class="w3-center"><b>4. </b>Elkoņiem ir jātrodas uz krēsla roku atzveltnes un ir jābūt ielocītiem 90 grādu leņķī.</p>
+    <p class="w3-center"><b>5. </b>Ceļiem ir jābūt vienā līmenī ar gurniem vai nedaudz zemāk.</p>
+    <p class="w3-center"><b>6. </b>Pēdām ir jāstāv uz zemes vai uz kāju balsta.</p>
+    <p class="w3-center"><b>7. </b>Plaukstu locītavām ir taisni jābūt pie vai uz tastatūras.</p>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+   <a class="w3-center" href="https://www.nytimes.com/wirecutter/blog/7-things-you-need-for-an-ergonomically-correct-workstation/" target="_blank">Izmantotie avoti</a>
+  <p class="w3-center" style="color:green">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
