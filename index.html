@@ -1,15 +1,155 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">SĀKUMS</a>
+    <a href="#rakstur" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RAKSTURGRAFIKA</a>
+    <a href="#vektor" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VEKTORGRAFIKA</a>
+    <a href="#3d" class="w3-bar-item w3-button w3-padding-large w3-hide-small">3D GRAFIKA</a>
+    <a href="#vid" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEO</a>
+    <a href="#txt" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEKSTA APSTRADE</a>
+    <a href="#exc" class="w3-bar-item w3-button w3-padding-large w3-hide-small">IZKLĀJLAPAS</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#rakstur" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RAKSTURGRAFIKA</a>
+  <a href="#vektor" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VEKTORGRAFIKA</a>
+  <a href="#3d" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">3D GRAFIKA</a>
+  <a href="#vid" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VIDEO</a>
+  <a href="#txt" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TEKSTA APSTRADE</a>
+  <a href="#exc" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">IZKLĀJLAPAS</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+      <img src="images/excel.png" alt=""/>
+    </div>
+  <div class="mySlides w3-display-container w3-center">
+       <img src="images/word.png" alt=""/>
+    </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/maja2dalas.png" alt=""/>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/vektor.png" alt=""/>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+      <img src="images/3d.png" alt=""/>
+  </div>
+   <div class="mySlides w3-display-container w3-center">
+       <img src="images/word.png" alt=""/>
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-black" id="rakstur">
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="rakstur">
+    <h2 class="w3-wide">RKASTURGRAFIKA</h2>
+    <h4 class="w3-center">Lai apgūtu raksturgrafikas pamatus, mēs izmantojām "GIMP" programmatūru.</h4>
+    <img class="w3-center" src="images/maja2dalas.png" alt=""/>
+  </div>
+  </div>
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="vektor">
+      <h2 class="w3-wide w3-center">VEKTORGRAFIKA</h2>
+      <h4 class="w3-center">Kā otro mācību gada tēmu mēs apguvām vektorgrafiku "Inkscape" programmatūrā, nobeidzot tēmu ar logotipa izveidi.</h4>
+      <img class="w3-center" src="images/vektor.png" alt=""/>
+  </div>
+  <div class="w3-black" id="3d">
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="3d">
+    <h2 class="w3-wide">3D GRAFIKA</h2>
+    <h4 class="w3-center">Noslēdzot attēlu apstrādes tēmu, mēs minimāli aplūkojām 3D grafiku "Tinkercad" progrmmatūrā.</h4>
+    <img class="w3-center" src="images/3d.png" alt=""/>
+  </div>
+  </div>
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="vid">
+      <h2 class="w3-wide w3-center">VIDEO</h2>
+      <h4 class="w3-center">Video montēšanai mēs izmantojam "Clipchamp" programmu</h4>
+      <video class="w3-center" width="320" height="240" controls>
+          <source src="images/MHauks_video.mp4" type="video/mp4">
+          Your browser does not support the <code>video</code> tag.
+      </video>
+  </div>
+  <div class="w3-black" id="txt">
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="txt">
+    <h2 class="w3-wide">TEKSTA APSTRĀDE</h2>
+    <h4 class="w3-center">Kļūstot par teksta apstrādes meistariem, mēs izmantojām "Word" programmatūru.</h4>
+    <img class="w3-center" src="images/word.png" alt=""/>
+    <p class="w3-opacity"><i>Priekšmetu rādītāja paraugs</i></p>
+  </div>
+  </div>
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1900px" id="exc">
+      <h2 class="w3-wide w3-center">IZKLĀJLAPAS</h2>
+      <h4 class="w3-center">Līdz šim mūsu pēdēja pabeigtā tēma ir izklājlapas, mēs izmantojām "Excel" programmatūru</h4>
+      <img class="w3-center" src="images/excel.png" alt=""/>
+  </div>
+  
+<!-- End Page Content -->
+
+<!-- Image of location/map -->
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
 </html>
