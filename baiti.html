@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+        function daudzums(){
+            let dz = document.getElementsByName('tp');
+            for(i = 0; i < dz.length; i++) {
+                if(dz[i].checked){
+                    document.getElementById("logs").value=dz[i].value*document.getElementById("cik").value;
+                }
+                    
+            }
+        }
+    </script>    
+        <form>
+           <p>Aprēķināt cik daudz informācijas var lejupielādēt</p>  
+           <p><input type="text" id="cik" onclick="document.getElementById('cik').value = ''">sekundēs, ja interneta ātrums ir 25 Mbps.<br></p>
+           <p>Atbilde<br></p>
+           <input type="text" id="logs">
+           <input type="radio" id="kib" name="tp" value="3051.7578125" onclick="daudzums()">
+           <label for="kib">KiB</label>
+           <input type="radio" id="kb" name="tp" value="3125" onclick="daudzums()">
+           <label for="kb">KB</label>
+        </form>
+        
+        
+    </body>
+    
+</html>
